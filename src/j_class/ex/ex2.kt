@@ -7,9 +7,18 @@ class Temperature(celsius: Double){
         set (value) {
             (fahrenheit - 32) * 5 / 9
         }
-    fun getCelsius() {
-        println("화씨: ${fahrenheit}")
+    fun display() {
+        println("현재 온도는 $celsius°C 입니다.")
+        println("화씨로는 ${fahrenheit}°F 입니다.")
     }
+}
+
+fun main() {
+    val temperature = Temperature(25.0) // 이 부분이 get에 해당합니다.
+    temperature.display()
+
+    temperature.fahrenheit = 77.0 // 이 부분이 set에 해당합니다.
+    temperature.display()
 }
 /*
 연습문제 2: 커스텀 게터/세터를 포함한 온도 클래스 만들기
