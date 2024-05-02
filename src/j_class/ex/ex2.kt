@@ -1,7 +1,6 @@
 package j_class.ex
 
-class Temperature(celsius: Double){
-    var celsius: Double = 0.0
+class Temperature(var celsius: Double){
     var fahrenheit: Double
         get () = celsius * 9 / 5 + 32
         set (value) {
@@ -9,15 +8,15 @@ class Temperature(celsius: Double){
         }
     fun display() {
         println("현재 온도는 $celsius°C 입니다.")
-        println("화씨로는 ${fahrenheit}°F 입니다.")
+        println("화씨로는 $fahrenheit°F 입니다.")
     }
 }
 
 fun main() {
-    val temperature = Temperature(25.0) // 이 부분이 get에 해당합니다.
+    val temperature = Temperature(20.0) // 이 부분이 get에 해당합니다.
     temperature.display()
 
-    temperature.fahrenheit = 77.0 // 이 부분이 set에 해당합니다.
+    temperature.fahrenheit = 80.0 // 이 부분이 set에 해당합니다.
     temperature.display()
 }
 /*
