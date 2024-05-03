@@ -8,6 +8,7 @@ infix fun <K, V> MutableMap<K, V>.assign(pair: Pair<K, V>) {
 fun main() {
     val map = mutableMapOf<String, Int>()
     map assign ("홍길동" to 30)
-    map assign ("홍길동" to 30)
+    map assign ("임꺽정" to 40)
+    println(map)
     // to : 코틀린 표준 라이브러리에 정의된 중위 함수
 }
