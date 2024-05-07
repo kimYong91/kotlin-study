@@ -19,6 +19,7 @@ public class FruitMain {
         String targetFruitName = "사과";
         targetFruitName = "바나나";
 
+        // 주석을 해제하면 변수를 사용할 수 없음
 //        List<Fruit> filtered = filterFruits(fruits,
 //                fruit -> targetFruitName.equals(fruit.getName()));
     }
