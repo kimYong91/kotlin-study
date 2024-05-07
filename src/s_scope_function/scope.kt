@@ -51,7 +51,7 @@ fun main() {
     val sd = StringBuilder()
     // 수신 객체를 with 의 인자로 받아 영역 범위를 만든
     val str: String = with(sd) {
-        // 내부 수신 객체는 this 또는 행략아여 접근
+        // 내부 수신 객체는 this 또는 생략하여 접근
         append("안녕하세요")
         append("여기는 스콥 함수 내부입니다.")
         append("수신 객체가 하는 일을 편하게 해주고")
